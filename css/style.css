@@ -1,6 +1,3 @@
-$desktop:1200px;
-$tablet:768px;
-$phone:600px;
 
 body {
   margin: 0;
@@ -38,6 +35,7 @@ button {
   font-size: 15px;
   border-radius: 4px;
 }
+
 footer {
   background-color: #373738;
   padding: 5px;
@@ -60,17 +58,12 @@ footer li {
 .flexContainer {
   display: flex;
   padding: 60px 100px;
-  @media screen and (max-width: $desktop) and (min-width: $phone)
-  {
-   background: #EBEBEB;
-  }
 }
 
-@media only screen and (max-width: 600) {
+@media screen and (max-width: 600px) {
   .flexContainer {
-    display:block;
-    font-size:25px;
-    background: black;
+    display: inline-block;
+    padding: 25px 50px;
   }
   
 }
@@ -78,6 +71,13 @@ footer li {
 .flexContainer div {
   width: 33%;
   padding: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .flexContainer div {
+    width: 100%;
+  }
+  
 }
 
 /* My Work Section */
