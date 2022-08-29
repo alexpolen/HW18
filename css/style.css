@@ -1,3 +1,7 @@
+$desktop:1200px;
+$tablet:768px;
+$phone:600px;
+
 body {
   margin: 0;
 }
@@ -56,17 +60,17 @@ footer li {
 .flexContainer {
   display: flex;
   padding: 60px 100px;
-  @media (max-width: 600px;){
-   display: column; 
+  @media screen and (max-width: $desktop) and (min-width: $phone)
+  {
+   background: #EBEBEB;
   }
 }
 
-@media screen (max-width:600px) {
+@media only screen and (max-width: 600) {
   .flexContainer {
     display:block;
     font-size:25px;
-
-
+    background: black;
   }
   
 }
